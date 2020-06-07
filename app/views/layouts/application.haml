@@ -1,0 +1,7 @@
+= javascript_pack_tag 'application'
+= stylesheet_pack_tag 'application'
+
+- if request.accept=="text/html, */*; q=0.01"
+  = render "layouts/jqm/page"
+- else
+  = render "layouts/jqm/full"
